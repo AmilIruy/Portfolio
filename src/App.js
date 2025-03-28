@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
+import Projects from './components/Projects';
+import Bubbles from './components/Bubbles';
+import Contato from './components/Contato'
+import './styles/App.css';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <Navbar 
+        isMenuOpen={isMenuOpen} 
+        toggleMenu={toggleMenu} 
+        closeMenu={closeMenu} 
+      />
+      <Bubbles />
+      <main>
+        <Home />
+        <About />
+        <Projects />
+        <Contato />
+      </main>
     </div>
   );
 }
