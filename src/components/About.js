@@ -13,8 +13,8 @@ const About = () => {
           <div className="skills">
             <h3>Minhas Habilidades</h3>
             <ul className="skills-list">
-              <li>Python</li>
-              <li>C#</li>
+              <li className="python">Python</li>
+              <li className="csharp">C#</li>
               <li>JavaScript</li>
               <li>HTML</li>
               <li>CSS</li>
