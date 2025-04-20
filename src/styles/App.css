@@ -39,6 +39,7 @@ nav {
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 4px;
+  font-weight: 900;
   color: #fff;
   text-decoration: none;
 }
@@ -56,6 +57,7 @@ nav {
 .nav-list a {
   color: #fff;
   text-decoration: none;
+  font-weight: 900;
   transition: 0.3s;
 }
 
@@ -68,9 +70,8 @@ nav {
   min-height: 100vh;
   width: 100%;
   padding-top: 8vh;
-  background-image: linear-gradient(to left, #090A11, #320513, #101125);
+  background-image: linear-gradient(to right, #090A11, #6f2dea, #101125);
   background-size: 500% 100%;
-  animation: degrade-animado 30s infinite alternate;
 }
 
 .content {
@@ -98,20 +99,20 @@ nav {
 .bolhas span {
   width: clamp(20px, 3vw, 30px);
   height: clamp(20px, 3vw, 30px);
-  background: rgba(94, 12, 38, 0.068);
-  box-shadow: 0px 0px 10px rgba(94, 12, 38, 0.545);
-  border-radius: 50%;
+  background: #6f2dea00;
+  box-shadow: -5px 5px 10px #0e042145, inset -3px 1px 5px #6f2dea0f;
+  border-radius: 10%;
   animation: animar calc(40s / var(--i)) linear infinite;
   position: relative;
 }
 
 .bolhas span:nth-of-type(even) {
-  background: rgba(94, 12, 38, 0.082);
+  background: #6f2dea00;
 }
 
 .sobre-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 2rem;
   margin-top: 2rem;
 }
@@ -128,10 +129,8 @@ nav {
   width: clamp(100px, 3vw, 100px);
   height: clamp(100px, 3vw, 100px);
   border-radius: 50%;
-  background: rgba(234, 255, 0, 0.862);
-  box-shadow: 0px 10px 10px rgba(250, 250, 0, 0.318);
-    backdrop-filter: blur(5px);
-  border-radius: 100px;
+  background-image: url('https://devicon-website.vercel.app/api/python/plain.svg?color=%23FFFFFF');
+  border-radius: 10px;
 }
 
 .csharp{
@@ -140,12 +139,11 @@ nav {
   width: clamp(100px, 3vw, 100px);
   height: clamp(100px, 3vw, 100px);
   border-radius: 50%;
-  background: rgba(234, 255, 0, 0.862);
-  box-shadow: 0px 10px 10px rgba(250, 250, 0, 0.318);
-  border-radius: 100px;
+  background-image: url('https://devicon-website.vercel.app/api/csharp/plain.svg?color=%23FFFFFF');
+  border-radius: 10px;
 }
 
-.projetos-grid, .contato-grid {
+.projetos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
@@ -153,15 +151,56 @@ nav {
   z-index: 10;
 }
 
-.projeto-card, .contato-card {
-  background: rgba(11, 0, 94, 0.368);
+.projeto-card {
+  background: #6f2dea27;
+  box-shadow: -5px 5px 10px #0e04218e, inset 0px 0px 1px #ffffff;
+  backdrop-filter: blur(3px);
   padding: 1.5rem;
   border-radius: 8px;
   transition: transform 0.3s;
 }
 
-.projeto-card:hover, .contato-card:hover {
+.projeto-card:hover {
   transform: translateY(-5px);
+}
+
+.contato, .centralize {
+  background: rgba(255, 255, 255, 0);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.social-links {
+  display: flex;
+  gap: 5rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.social-icon i {
+  font-size: 5rem;
+  color: #ffffff;
+  transition: color 0.5s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+}
+
+.social-icon:hover i {
+  color: white;
 }
 
 .mobile-menu {

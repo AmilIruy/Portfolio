@@ -15,7 +15,7 @@ const Bubbles = () => {
           key={bubble.id} 
           style={{ 
             '--i': bubble.id,
-            animationDuration: `${40 / bubble.animationDelay}s`
+            animationDuration: `${120 / bubble.animationDelay}s`
           }}
         ></span>
       ))}

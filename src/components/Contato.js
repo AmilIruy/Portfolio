@@ -4,20 +4,16 @@ const Contato = () => {
   return (
     <section id="contato" className="section-container">
       <div className="content">
-        <h2>Contato</h2>
-        <div className="contato-grid">
-          <div className="contato-card">
-            <h3>contato 1</h3>
-            <p>Descrição do contato</p>
-          </div>
-          <div className="contato-card">
-            <h3>contato 2</h3>
-            <p>Descrição do contato</p>
-          </div>
-          <div className="contato-card">
-            <h3>contato 3</h3>
-            <p>Descrição do contato</p>
-          </div>
+        <h2 class= "centralize">Contato</h2>
+        <div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/yuri-aciole-86417a295/" class="social-icon">
+                <i class="devicon-linkedin-plain"></i>
+            </a>
+            <a href="https://github.com/AmilIruy" class="social-icon">
+                <i class="devicon-github-original"></i>
+            </a>
+        </div>
         </div>
       </div>
     </section>

@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <section id="projetos" className="section-container">
       <div className="content">
-        <h2>Meus Projetos</h2>
+        <h2 class= "centralize">Meus Projetos</h2>
         <div className="projetos-grid">
           <div className="projeto-card">
             <h3>Projeto 1</h3>

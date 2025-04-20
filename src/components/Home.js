@@ -7,7 +7,7 @@ const Home = () => {
         <h1>Portfólio</h1>
         <h2>Portfólio feito por Yuri Aciole</h2>
         <img 
-          src="/imagens/iiiv16 1.png" 
+          src="" 
           alt="Foto de perfil" 
         />
       </div>
