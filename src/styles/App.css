@@ -29,7 +29,7 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(1px);
   background: #090a1138;
   box-shadow: 0px 3px 10px #090a118d;
   z-index: 1000;
@@ -70,8 +70,18 @@ nav {
   min-height: 100vh;
   width: 100%;
   padding-top: 8vh;
-  background-image: linear-gradient(to right, #090A11, #6f2dea, #101125);
+  background-image: linear-gradient(to right, #090A11, #6f2dea);
   background-size: 500% 100%;
+}
+
+.about-section {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 8vh;
+  box-shadow: inset 0px 0px 10px #00000061;
+  background-image: linear-gradient(to right, #090A11, #161839);
 }
 
 .content {
@@ -117,30 +127,41 @@ nav {
   margin-top: 2rem;
 }
 
-.skills-list {
-  list-style: none;
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 1rem;
-  z-index: 10;
+  max-width: 800px;
 }
 
-.python{
-  margin: 0.8rem 0;
-  padding: 35px 25px 20px;
-  width: clamp(100px, 3vw, 100px);
-  height: clamp(100px, 3vw, 100px);
-  border-radius: 50%;
-  background-image: url('https://devicon-website.vercel.app/api/python/plain.svg?color=%23FFFFFF');
-  border-radius: 10px;
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
-.csharp{
-  margin: 0.8rem 0;
-  padding: 40px 40px 20px;
-  width: clamp(100px, 3vw, 100px);
-  height: clamp(100px, 3vw, 100px);
-  border-radius: 50%;
-  background-image: url('https://devicon-website.vercel.app/api/csharp/plain.svg?color=%23FFFFFF');
-  border-radius: 10px;
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease;
+}
+.tech-item i {
+  font-size: 3.5rem;
+  color: #333;
+}
+
+.tech-item:hover {
+  transform: translateY(-5px);
+}
+
+.tech-item span {
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .projetos-grid {
@@ -153,7 +174,7 @@ nav {
 
 .projeto-card {
   background: #6f2dea27;
-  box-shadow: -5px 5px 10px #0e04218e, inset 0px 0px 1px #ffffff;
+  box-shadow: -5px 5px 10px #0e04218e, inset 0px 0px 1px #9267ff;
   backdrop-filter: blur(3px);
   padding: 1.5rem;
   border-radius: 8px;
@@ -181,11 +202,13 @@ nav {
   width: 100px;
   height: 100px;
   border-radius: 10%;
+  background: rgb(0, 0, 0);
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
   cursor: pointer;
+  box-shadow: -4px 5px 10px #101125, inset 0px 0px 2px #9267ff;
   text-decoration: none;
 }
 
