@@ -24,14 +24,15 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-transform: uppercase;
   padding: 0 2rem;
   height: 8vh;
   position: fixed;
   width: 100%;
   top: 0;
   backdrop-filter: blur(1px);
-  background: #090a1138;
-  box-shadow: 0px 3px 10px #090a118d;
+  background: #090a1100;
+  box-shadow: 0px 3px 10px #090a1100;
   z-index: 1000;
 }
 
@@ -70,7 +71,7 @@ nav {
   min-height: 100vh;
   width: 100%;
   padding-top: 8vh;
-  background-image: linear-gradient(to right, #090A11, #6f2dea);
+  background-image: linear-gradient(to right, #090a11, #6f2dea);
   background-size: 500% 100%;
 }
 
@@ -107,17 +108,20 @@ nav {
 }
 
 .bolhas span {
-  width: clamp(20px, 3vw, 30px);
-  height: clamp(20px, 3vw, 30px);
-  background: #6f2dea00;
-  box-shadow: -5px 5px 10px #0e042145, inset -3px 1px 5px #6f2dea0f;
-  border-radius: 10%;
+  width: clamp(1px, 1vw, 5px);
+  height: clamp(1px, 1vw, 5px);
+  background: #ffffff;
+  box-shadow: 0px 0px 10px #6f2dea, inset 0px 0px 2px #6f2dea;
+  border-radius: 50%;
   animation: animar calc(40s / var(--i)) linear infinite;
+  animation-delay: var(--animationDelay, 0s);
   position: relative;
 }
 
 .bolhas span:nth-of-type(even) {
-  background: #6f2dea00;
+  background: #ffffff;
+  width: clamp(1px, 1vw, 4px);
+  height: clamp(1px, 1vw, 4px);
 }
 
 .sobre-content {
@@ -301,10 +305,10 @@ nav {
 }
 
 @keyframes animar {
-  0% {
+  100% {
     transform: translateY(300vh);
   }
-  100% {
+  0% {
     transform: translateY(-100vh);
   }
 }
