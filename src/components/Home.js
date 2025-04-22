@@ -11,6 +11,12 @@ const Home = () => {
           alt="Foto de perfil" 
         />
       </div>
+      <div class= "loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </section>
   );
 };
