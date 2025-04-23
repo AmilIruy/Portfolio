@@ -1,31 +1,26 @@
-  import React, { useEffect, useRef } from 'react';
+  import React, {} from 'react';
 
   const Home = () => {
-    const parallaxRef = useRef(null);
-  
-    useEffect(() => {
-      const handleScroll = () => {
-        const scrollY = window.scrollY;
-        const speed = 0.08;
-  
-        if (parallaxRef.current) {
-          parallaxRef.current.style.transform = `translateY(${scrollY * speed}px)`;
-        }
-      };
-  
-      window.addEventListener('scroll', handleScroll);
-      return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
-    return (
+     return (
       <section id="home" className="section-container">
+        <video
+          src="imagens/107416-678526500.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="video-bg"
+        />
+
+        <div className="video-overlay"></div>
+        
         <div className="content">
-          <h1>Portfólio</h1>
-          <h2>Portfólio feito por Yuri Aciole</h2>
+          <h1 className='titulo'>Hello There!</h1>
+          <p className='sub-titulo'>Portfólio feito por Yuri Aciole</p>
           <img src="" alt="Foto de perfil" />
         </div>
 
-        <div className="loader-parallax" ref={parallaxRef}>
+        <div className="loader-parallax">
           <div className="loader">
             <span></span>
             <span></span>

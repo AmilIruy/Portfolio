@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
-import Bubbles from './components/Bubbles';
 import Contato from './components/Contato'
 import './styles/App.css';
 
@@ -25,7 +24,6 @@ function App() {
         toggleMenu={toggleMenu} 
         closeMenu={closeMenu} 
       />
-      <Bubbles />
       <main>
         <Home />
         <About />
