@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contato = () => {
   return (
-    <section id="contato" className="section-container, about-section">
+    <section id="contato" className="section-container">
       <div className="content">
         <h2 class= "centralize">Contato</h2>
         <div>

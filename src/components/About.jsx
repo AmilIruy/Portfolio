@@ -2,13 +2,13 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section id="sobre" className="about-section">
+    <section id="sobre" className="section-container">
       <div className="content">
         <h2 class= "centralize">Sobre Mim</h2>
         <div className="sobre-content">
           <div className="texto-sobre">
-            <p>Desenvolvedor apaixonado por criar soluções inovadoras.</p>
-            <p>Especializado em desenvolvimento web e experiências interativas.</p>
+            <p>Desenvolvedor full-stack com experiência em suporte técnico, manutenção de sistemas web e automação de processos.</p>
+            <p>Possuo sólida base acadêmica em Engenharia de Software e prática com linguagens como Python, C#, JavaScript e ferramentas modernas de desenvolvimento. Tenho perfil proativo, colaborativo e orientado a resultados.</p>
           </div>
           <div className="skills">
             <h3>Minhas Habilidades</h3>
