@@ -14,9 +14,9 @@
 
         <div className="video-overlay"></div>
         
-        <div className="content">
+        <div className="contenthome">
           <h1 className='titulo'>Hello There!</h1>
-          <p className='sub-titulo'>Portfólio feito por Yuri Aciole</p>
+          <p className='sub-titulo'>Portfólio em contrução por Yuri Aciole</p>
           <img className='profile-image' src="imagens/yuriaciole.svg" alt="Foto de perfil" />
         </div>
 
