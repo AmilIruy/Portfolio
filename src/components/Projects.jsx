@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <section id="projetos" className="section-container">
       <div className="content">
-        <h2 class= "centralize">Meus Projetos</h2>
+        <h2 className= "centralize">Meus Projetos</h2>
         <div className="projetos-grid">
           <div className="projeto-card">
             <img className= "projetoimage" src="imagens/840_560.jpeg" alt="" />

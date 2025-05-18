@@ -12,7 +12,7 @@ const About = () => {
           </div>
           <div className="skills">
             <h3>Minhas Habilidades</h3>
-            <div className="skills-list">
+            <div className="skills-list skills-list-animation">
             <div className="tech-item">
                 <i className="devicon-python-plain colored"></i>
                 <span>Python</span>
