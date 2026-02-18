@@ -15,7 +15,7 @@ const Home = () => {
       <div className="contenthome">
         <img className='profile-image animated-profile' src="imagens/yuriaciole.svg" alt="Foto de perfil" />
         <h1 className='titulo'>Hello There!</h1>
-        <p className='sub-titulo'>Portfólio em contrução por Yuri Aciole</p>
+        <p className='sub-titulo'>Portfólio em contrução por Yuri Aciole!</p>
       </div>
     </section>
   );
