@@ -49,6 +49,10 @@ const About = () => {
                 <i className="devicon-microsoftsqlserver-plain colored"></i>
                 <span>SQL Server</span>
             </div>
+            <div className="tech-item">
+                <i className="devicon-git-plain colored"></i>
+                <span>Git</span>
+            </div>  
           </div>
             </div>
         </div>

@@ -49,6 +49,18 @@ function App() {
           element.classList.add('visible');
         }
       });
+
+      animateElements.forEach(element => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const elementBottom = element.getBoundingClientRect().bottom;
+
+        if (elementPosition < windowHeight * 0.85 && elementBottom > 0) {
+          element.classList.add('visible');
+        } else {
+        element.classList.remove('visible'); // remove quando sai da tela
+        } 
+      });
+
     }
     
     function setupAnimations() {
