@@ -20,26 +20,8 @@ function App() {
 
   useEffect(() => {
     function handleScroll() {
-      const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
-      
-      const homeSection = document.getElementById('home');
-      const homeContent = document.querySelector('.contenthome');
 
-      
-      if (homeSection && homeContent) {
-        const homeSectionHeight = homeSection.offsetHeight;
-        
-        const fadeOutThreshold = homeSectionHeight * 0.5;
-        const homeOpacity = 1 - (scrollPosition / fadeOutThreshold);
-        
-        homeContent.style.opacity = Math.max(0, homeOpacity);
-        homeContent.style.transform = `
-          translateY(${scrollPosition * 0.9}px)
-          scale(${Math.max(0.1, homeOpacity)})
-        `;
-      }
-      
       const animateElements = document.querySelectorAll('.animate-on-scroll');
       
       animateElements.forEach(element => {
