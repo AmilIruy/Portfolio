@@ -193,8 +193,8 @@ nav {
 }
 
 .projeto-card {
-  background: #12121200;
-  box-shadow:  0px 0px 10px rgb(0, 0, 0);
+  background: #0909095e;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
   backdrop-filter: blur(3px);
   padding: 1.5rem;
   border-radius: 15px;
@@ -202,8 +202,8 @@ nav {
 }
 
 .projeto-card.visible:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 0px 10px #00aaff5d,  0px 0px 5px rgba(0, 16, 73, 0.141);
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 10px #00aaff, inset 0px 0px 5px rgba(0, 55, 255, 0.533);
 }
 
 .projetoimage {
@@ -222,14 +222,13 @@ nav {
 .social-icon {
   width: 100px;
   height: 100px;
-  border-radius: 10%;
-  background: rgb(0, 0, 0);
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0);
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.7s ease;
   cursor: pointer;
-  box-shadow: inset 0px 0px 2px rgba(0, 55, 255, 0.708);
   text-decoration: none;
 }
 
@@ -247,11 +246,10 @@ nav {
 
 .social-icon:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 0px 20px #00aaff15, inset 0px 0px 2px rgba(0, 55, 255, 0.708);
 }
 
 .social-icon:hover i {
-  color: white;
+  color: #00aaff;
 }
 
 .mobile-menu {
