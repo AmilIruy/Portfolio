@@ -46,6 +46,15 @@ function App() {
     }
     
     function setupAnimations() {
+
+      const homeSection = document.getElementById('home');
+      if (homeSection) {
+        const homeHeader = homeSection.querySelector('.contenthome');
+        
+        if (homeHeader) homeHeader.classList.add('animate-on-scroll');
+      }
+    
+
       const aboutSection = document.getElementById('sobre');
       if (aboutSection) {
         const aboutHeaders = aboutSection.querySelectorAll('h2, h3');
