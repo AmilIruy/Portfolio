@@ -13,7 +13,7 @@ const Contato = () => {
             <a href="https://github.com/AmilIruy" class="social-icon">
                 <i class="devicon-github-original"></i>
             </a>
-                        <a href="https://www.facebook.com/yuri.lima.50702769/" class="social-icon">
+            <a href="https://www.facebook.com/yuri.lima.50702769/" class="social-icon">
             <i class="devicon-facebook-plain"></i>
             </a>
         </div>
