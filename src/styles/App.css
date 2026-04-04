@@ -130,7 +130,7 @@ nav {
 .content {
   position: relative;
   z-index: 2;
-  padding: 2rem;
+  padding: 1rem;
   color: #fefefe;
   max-width: 1200px;
   margin: 0 auto;
