@@ -1,6 +1,6 @@
 import { Project, SocialLink, Section } from './types';
 
-export const PROFILE_PHOTO = "src/assets/images/yuriaciole.svg";
+export const PROFILE_PHOTO = "./assets/images/yuriaciole.svg";
 
 export const SECTIONS: Section[] = [
   { id: 'hero', title: 'Home' },
