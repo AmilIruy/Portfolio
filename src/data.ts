@@ -104,7 +104,7 @@ export const PROJECTS: Project[] = [
     subtitle: 'Technology / API Development',
     category: 'web',
     description: 'Demonstration API developed as part of a modernization initiative for an internal system, transitioning from a legacy architecture based on AngularJS and VB.NET to a modern stack using Angular, .NET, and SQL Server. The project aimed to demonstrate improvements in scalability, maintainability, performance, and application structure, serving as a reference for future system enhancements.',
-    image: 'src\\assets\\images\\GACT.png',
+    image: '.\\assets\\images\\GACT.png',
     tags: ['Angular', '.NET', 'C#', 'TypeScript'],
     link: '#',
     highlighted: true
@@ -115,7 +115,7 @@ export const PROJECTS: Project[] = [
     subtitle: '3D Design/ Front-End Development',
     category: 'web',
     description: 'Development of a 3D navigation application using Three.js for an interactive totem, allowing users to locate rooms and visualize routes through corridors with directional guidance. The solution aimed to improve internal navigation through an intuitive and immersive experience.',
-    image: 'src\\assets\\images\\SOON.png',
+    image: '.\\assets\\images\\SOON.png',
     tags: ['React', 'Three.js CSS3D'],
     link: '#',
     highlighted: true
@@ -126,7 +126,7 @@ export const PROJECTS: Project[] = [
     subtitle: 'SOON / SOON',
     category: 'web',
     description: 'SOON',
-    image: 'src\\assets\\images\\SOON.png',
+    image: '.\\assets\\images\\SOON.png',
     tags: ['...', '...', '...'],
     link: '#'
   },
@@ -136,7 +136,7 @@ export const PROJECTS: Project[] = [
     subtitle: 'SOON / SOON',
     category: 'web',
     description: 'SOON',
-    image: 'src\\assets\\images\\SOON.png',
+    image: '.\\assets\\images\\SOON.png',
     tags: ['...', '...', '...'],
     link: '#'
   },
@@ -146,7 +146,7 @@ export const PROJECTS: Project[] = [
     subtitle: 'SOON / SOON',
     category: 'web',
     description: 'SOON',
-    image: 'src\\assets\\images\\SOON.png',
+    image: '.\\assets\\images\\SOON.png',
     tags: ['...', '...', '...'],
     link: '#'
   }
