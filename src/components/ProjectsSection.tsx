@@ -111,7 +111,6 @@ export function ProjectsSection({ scrollToSection, onSelectProject }: ProjectsSe
                   : 'text-brand-light/60 hover:text-brand-light'
               }`}
             >
-              <Sparkles className="w-3.5 h-3.5 text-brand-lime" />
               Highlights
             </button>
           </div>
