@@ -106,7 +106,7 @@ export const PROJECTS: Project[] = [
     description: 'Demonstration API developed as part of a modernization initiative for an internal system, transitioning from a legacy architecture based on AngularJS and VB.NET to a modern stack using Angular, .NET, and SQL Server. The project aimed to demonstrate improvements in scalability, maintainability, performance, and application structure, serving as a reference for future system enhancements.',
     image: '.\\assets\\images\\GACT.png',
     tags: ['Angular', '.NET', 'C#', 'TypeScript'],
-    link: '#',
+    link: 'https://github.com/AmilIruy/Demonstration-API',
     highlighted: true
   },
   {
